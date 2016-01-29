@@ -31,7 +31,7 @@
         <activity
             android:name=".activity.bap.BapActivity"
             android:label="@string/title_activity_bap"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppGreenTheme" />
         <activity
             android:name=".activity.timetable.TimeTableActivity"
             android:label="@string/title_activity_time_table"
@@ -113,7 +113,11 @@
         <activity
             android:name=".StopWatch"
             android:label="@string/title_activity_stop_watch"
-            android:theme="@style/AppBlueTheme"></activity>
+            android:theme="@style/AppLightBlueTheme" />
+        <activity
+            android:name=".Notice"
+            android:label="@string/title_activity_notice1"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

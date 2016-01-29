@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import bugil.bada.bugilapp.BugilTalk;
+import bugil.bada.bugilapp.Notice;
 import bugil.bada.bugilapp.R;
 import bugil.bada.bugilapp.StopWatch;
 import bugil.bada.bugilapp.activity.bap.BapActivity;
@@ -59,8 +60,11 @@ public class MainFragment extends Fragment {
                             startActivity(new Intent(getActivity(), BapActivity.class));
                             break;
                         case 2:
-                            startActivity(new Intent(getActivity(), TimeTableActivity.class));
+                            startActivity(new Intent(getActivity(), StopWatch.class));
                             break;
+                        //case 3:
+                            //startActivity(new Intent(getActivity(), TimeTableActivity.class));
+                            //break;
                     }
                 } else {
                     switch (position) {
@@ -68,11 +72,12 @@ public class MainFragment extends Fragment {
                             startActivity(new Intent(getActivity(), ScheduleActivity.class));
                             break;
                         case 1:
-                            startActivity(new Intent(getActivity(), StopWatch.class));
+                            startActivity(new Intent(getActivity(), Notice.class));
                             break;
-                        case 2:
-                            startActivity(new Intent(getActivity(), ExamTimeActivity.class));
-                            break;
+                        //break;
+                        //case 2:
+                            //startActivity(new Intent(getActivity(), ExamTimeActivity.class));
+                            //break;
 
                     }
                 }
@@ -84,9 +89,11 @@ public class MainFragment extends Fragment {
         Preference mPref = new Preference(getActivity());
 
         if (code == 1) {
-            mAdapter.addItem(R.drawable.btico,
+            mAdapter.addItem(R.drawable.btalkico,
                     getString(R.string.title_activity_bugil_talk),
                     getString(R.string.message_activity_bugil_talk), true);
+
+
             // SimpleView
             if (mPref.getBoolean("simpleShowBap", true)) {
                 BapTool.todayBapData mBapData = BapTool.getTodayBap(getActivity());
@@ -100,6 +107,12 @@ public class MainFragment extends Fragment {
                         getString(R.string.title_activity_bap),
                         getString(R.string.message_activity_bap), true);
             }
+
+            mAdapter.addItem(R.drawable.timerico,
+                    getString(R.string.title_activity_stop_watch),
+                    getString(R.string.message_activity_stop_watch), true);
+
+
 
 
             /**if (mPref.getBoolean("simpleShowTimeTable", true)) {
@@ -122,9 +135,10 @@ public class MainFragment extends Fragment {
             mAdapter.addItem(R.drawable.calico,
                     getString(R.string.title_activity_schedule),
                     getString(R.string.message_activity_schedule));
-            mAdapter.addItem(R.drawable.bico3,
-                    getString(R.string.title_activity_stop_watch),
-                    getString(R.string.message_activity_stop_watch));
+            mAdapter.addItem(R.drawable.bico1,
+                    getString(R.string.title_activity_notice1),
+                    getString(R.string.message_activity_notice1));
+
             /**mAdapter.addItem(R.drawable.bugil,
                     getString(R.string.title_activity_exam_range),
                     getString(R.string.message_activity_exam_range));**/

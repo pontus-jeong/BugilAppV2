@@ -4,41 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.bap.BapActivity">
+    android:fitsSystemWindows="true"
+    tools:context="bugil.bada.bugilapp.SchoolNotice">
 
-    <include layout="@layout/toolbar" />
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_school_notice" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context=".activity.bap.BapActivity"
+        tools:context=".SchoolNotice"
         android:background="@color/colorBack"
-        tools:showIn="@layout/activity_bap">
-
-        <android.support.v4.widget.SwipeRefreshLayout
-            android:id="@+id/mSwipeRefreshLayout"
+        tools:showIn="@layout/activity_school_notice">
+        <WebView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/testwebview">
 
-            <ListView
-                android:id="@+id/mListView"
+        </WebView>
+
+
+        <ListView
+                android:id="@+id/listView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:divider="@null"
                 android:dividerHeight="5dp" />
 
-        </android.support.v4.widget.SwipeRefreshLayout>
 
     </LinearLayout>
-
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/mFab"
+        android:id="@+id/returnbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/ic_date_range" />
+        android:onClick="mOnClick"
+        android:src="@android:drawable/ic_menu_revert" />
+
+
+
 
 </android.support.design.widget.CoordinatorLayout>

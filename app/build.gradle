@@ -8,8 +8,8 @@ android {
         applicationId "bugil.bada.bugilapp"
         minSdkVersion 16
         targetSdkVersion 23
-        versionCode 32
-        versionName "3.0.5"
+        versionCode 37
+        versionName "3.2.5"
     }
     buildTypes {
         release {

@@ -24,4 +24,7 @@ public class Tools {
 
         return wifi.isConnected();
     }
+
+
+
 }

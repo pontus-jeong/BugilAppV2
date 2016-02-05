@@ -64,7 +64,7 @@ public class BapWidget extends AppWidgetProvider {
                 mTitle = mContext.getString(R.string.today_breakfast);
                 mTodayMeal = mData.Breakfast;
                 if (BapTool.mStringCheck(mTodayMeal)) {
-                    mTodayMeal = mContext.getString(R.string.no_data_lunch);
+                    mTodayMeal = mContext.getString(R.string.no_data_breakfast);
                 } else {
                     mTodayMeal = BapTool.replaceString(mTodayMeal);
                 }
@@ -72,7 +72,7 @@ public class BapWidget extends AppWidgetProvider {
                 mTitle = mContext.getString(R.string.today_lunch);
                 mTodayMeal = mData.Lunch;
                 if (BapTool.mStringCheck(mTodayMeal)) {
-                    mTodayMeal = mContext.getString(R.string.no_data_dinner);
+                    mTodayMeal = mContext.getString(R.string.no_data_lunch);
                 } else {
                     mTodayMeal = BapTool.replaceString(mTodayMeal);
                 }

@@ -19,7 +19,7 @@ import bugil.bada.bugilapp.tool.TimeTableTool;
 /**
  * Implementation of App Widget functionality.
  */
-/**public class TimeTableWidget extends AppWidgetProvider {
+public class TimeTableWidget extends AppWidgetProvider {
 
     static void updateAppWidget(Context mContext, AppWidgetManager appWidgetManager, int appWidgetId) {
 
@@ -82,4 +82,4 @@ import bugil.bada.bugilapp.tool.TimeTableTool;
         }
     }
 }
-**/
+

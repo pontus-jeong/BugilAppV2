@@ -18,5 +18,6 @@
     <color name="colorRed">#F44336</color>
     <color name="colorPurple">#9C27B0</color>
     <color name="colorBugil">#f57f17</color>
+    <color name="colorBack">#EEEEEE</color>
 
 </resources>

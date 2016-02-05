@@ -144,16 +144,16 @@ public class StopWatch extends AppCompatActivity {
 
     String getRest() {
         long ell = SystemClock.elapsedRealtime() - mPauseTime;
-        String sEll = String.format("%02d:%02d:%02d", ell / 1000 / 60,
-                (ell / 1000) % 60, (ell % 1000)/ 10);
+        String sEll = String.format("%02d:%02d:%02d", ell / 1000/60/60,
+                ell / 1000 / 60, (ell / 1000) % 60);
         return sEll;
     }
 
     String getStudy() {
         long Snow = SystemClock.elapsedRealtime();
         long Sell = Snow - mBaseTime;
-        String sSEll = String.format("%02d:%02d:%02d", Sell / 1000 / 60,
-                (Sell / 1000) % 60, (Sell % 1000)/ 10);
+        String sSEll = String.format("%02d:%02d:%02d", Sell / 1000/60/60,
+                Sell / 1000 / 60, (Sell / 1000) % 60);
         return sSEll;
     }
 

@@ -35,7 +35,7 @@
         <activity
             android:name=".activity.timetable.TimeTableActivity"
             android:label="@string/title_activity_time_table"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppIndigoTheme" />
         <activity
             android:name=".activity.settings.SettingsActivity"
             android:label="@string/title_activity_settings" />
@@ -86,7 +86,6 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/bap_widget_info" />
         </receiver>
-        <!--
         <receiver
             android:name=".widget.TimeTableWidget"
             android:label="@string/widget_timetable_name">
@@ -98,7 +97,6 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/time_table_widget_info" />
         </receiver>
-        -->
         <receiver
             android:name=".widget.WidgetBroadCast"
             android:enabled="true"
@@ -117,7 +115,11 @@
         <activity
             android:name=".Notice"
             android:label="@string/title_activity_notice1"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SchoolNotice"
+            android:label="@string/title_activity_notice1"
+            android:theme="@style/AppTestTheme"></activity>
     </application>
 
 </manifest>

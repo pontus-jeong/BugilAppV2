@@ -1,11 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="fill_parent"
+
     android:layout_height="fill_parent"
+
     android:orientation="vertical" >
 
-    <WebView
-        android:id="@+id/boardweb"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+
+
+    <FrameLayout
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="fill_parent" >
+
+
+
+        <WebView
+
+            android:id="@+id/web"
+
+            android:layout_width="fill_parent"
+
+            android:layout_height="fill_parent" />
+
+
+
+
+        <ProgressBar
+
+            android:id="@+id/web_progress"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+
+
+            android:visibility="gone" />
+
+        <android.support.v4.widget.ContentLoadingProgressBar
+            android:id="@+id/testprogress"
+
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="#1E88E5"
+            >
+
+        </android.support.v4.widget.ContentLoadingProgressBar>
+<!--
+        <com.gc.materialdesign.views.ProgressBarCircularIndeterminate
+            android:id="@+id/progressBarCircularIndeterminate"
+
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="#1E88E5" />
+            -->
+
+    </FrameLayout>
+
+
 
 </LinearLayout>

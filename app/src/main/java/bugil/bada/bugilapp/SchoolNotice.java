@@ -142,6 +142,7 @@ private static String URL_PRIMARY = "http://www.bugil.hs.kr/"; //홈페이지 �
         url = URL_PRIMARY + GETNOTICE; //파싱하기전 PRIMARY URL 과 공지사항 URL 을 합쳐 완전한 URL 을만든다.
 
         if(isInternetCon()) { //false 반환시 if 문안의 로직 실행
+
             Toast.makeText(SchoolNotice.this, "인터넷에 연결되지않아 불러오기를 중단합니다.", Toast.LENGTH_SHORT).show();
             finish();
         }else{ //인터넷 체크 통과시 실행할 로직

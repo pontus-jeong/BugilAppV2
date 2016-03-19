@@ -42,27 +42,28 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="아침"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="아침"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/mBreakfast"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="15sp"
-            android:textSize="15sp" />
+            <TextView
+                android:id="@+id/mBreakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15sp"
+                android:textSize="15sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30sp"
                 android:text="점심"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="20sp"
@@ -93,42 +94,42 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="15sp"
                 android:textSize="15sp" />
-<!--
-            <LinearLayout
-                android:id="@+id/starLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:visibility="gone">
+            <!--
+                        <LinearLayout
+                            android:id="@+id/starLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
 
-                <Button
-                    android:id="@+id/giveStar"
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:layout_weight="1"
-                    android:background="?attr/colorPrimary"
-                    android:focusable="false"
-                    android:text="별점 주기"
-                    android:textAllCaps="true"
-                    android:textColor="@color/white" />
+                            <Button
+                                android:id="@+id/giveStar"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:background="?attr/colorPrimary"
+                                android:focusable="false"
+                                android:text="별점 주기"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white" />
 
-                <Button
-                    android:id="@+id/showStar"
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:layout_weight="1"
-                    android:background="?attr/colorPrimary"
-                    android:focusable="false"
-                    android:text="별점 확인"
-                    android:textAllCaps="true"
-                    android:textColor="@color/white" />
+                            <Button
+                                android:id="@+id/showStar"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:background="?attr/colorPrimary"
+                                android:focusable="false"
+                                android:text="별점 확인"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white" />
 
-            </LinearLayout>
--->
+                        </LinearLayout>
+            -->
 
 
         </LinearLayout>

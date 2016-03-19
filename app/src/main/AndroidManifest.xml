@@ -3,6 +3,8 @@
     package="bugil.bada.bugilapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -11,16 +13,20 @@
     <application
         android:allowBackup="true"
         android:fullBackupContent="false"
-        android:icon="@drawable/bico2"
+        android:icon="@drawable/bugilgo1"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
         <!-- Activity -->
         <activity
             android:name=".activity.main.MainActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
+
             android:label="@string/app_name"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,34 +37,47 @@
         <activity
             android:name=".activity.bap.BapActivity"
             android:label="@string/title_activity_bap"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:theme="@style/AppGreenTheme" />
         <activity
             android:name=".activity.timetable.TimeTableActivity"
             android:label="@string/title_activity_time_table"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:theme="@style/AppIndigoTheme" />
         <activity
             android:name=".activity.settings.SettingsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/title_activity_settings" />
         <activity
             android:name=".activity.notice.NoticeActivity"
             android:label="@string/title_activity_notice"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".activity.notice.NoticeSendActivity"
             android:label="@string/title_activity_notice_send"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".activity.schedule.ScheduleActivity"
             android:label="@string/title_activity_schedule"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".activity.exam.ExamTimeActivity"
             android:label="@string/title_activity_exam_range"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".BugilTalk"
             android:label="@string/title_activity_bugil_talk"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="net.daum.adam.publisher.impl.AdInterstitialActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
 
         <!-- AutoUpdate -->
         <receiver
@@ -111,14 +130,17 @@
         <activity
             android:name=".StopWatch"
             android:label="@string/title_activity_stop_watch"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:theme="@style/AppLightBlueTheme" />
         <activity
             android:name=".Notice"
             android:label="@string/title_activity_notice1"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".SchoolNotice"
             android:label="@string/title_activity_notice1"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTestTheme"></activity>
     </application>
 

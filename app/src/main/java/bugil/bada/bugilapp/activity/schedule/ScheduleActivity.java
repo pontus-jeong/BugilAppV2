@@ -69,8 +69,8 @@ public class ScheduleActivity extends AppCompatActivity {
         mAdapter.addFragment("10월", ScheduleFragment.getInstance(10));
         mAdapter.addFragment("11월", ScheduleFragment.getInstance(11));
         mAdapter.addFragment("12월", ScheduleFragment.getInstance(12));
-        mAdapter.addFragment("2016년 1월", ScheduleFragment.getInstance(1));
-        mAdapter.addFragment("2016년 2월", ScheduleFragment.getInstance(2));
+        mAdapter.addFragment("2017년 1월", ScheduleFragment.getInstance(1));
+        mAdapter.addFragment("2017년 2월", ScheduleFragment.getInstance(2));
 
         viewPager.setAdapter(mAdapter);
     }

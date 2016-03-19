@@ -11,8 +11,14 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import net.daum.adam.publisher.AdInterstitial;
+import net.daum.adam.publisher.AdView;
+import net.daum.adam.publisher.impl.AdError;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +27,7 @@ import bugil.bada.bugilapp.R;
 import bugil.bada.bugilapp.activity.settings.SettingsActivity;
 
 public class MainActivity extends AppCompatActivity {
+    //AdInterstitial mAdInterstitial = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +36,40 @@ public class MainActivity extends AppCompatActivity {
         Toolbar mToolbar = (Toolbar) findViewById(R.id.mToolbar);
         setSupportActionBar(mToolbar);
 
+        //mAdInterstitial = new AdInterstitial(this);
+        // 2. 전면형 광고 광고단위ID를 설정한다.
+        //mAdInterstitial.setClientId("DAN-rhb2tygwzr5j");
+
+
+
+/**
+        // 광고 영역에 캐시 사용 여부 : 기본 값은 true
+        mAdInterstitial.setAdCache(false);
+
+        mAdInterstitial.setOnAdLoadedListener(new AdView.OnAdLoadedListener() {
+            @Override
+            public void OnAdLoaded() {
+                Log.i("InterstitialTab", "광고가 로딩되었습니다.");
+            }
+        });
+        // 4. (선택)전면형 광고 다운로드 실패시에 실행할 리스너
+        mAdInterstitial.setOnAdFailedListener(new AdView.OnAdFailedListener() {
+            @Override
+            public void OnAdFailed(AdError error, String errorMessage) {
+                Toast.makeText(MainActivity.this,
+                        errorMessage, Toast.LENGTH_LONG).show();
+            }
+        });
+        // 5. (선택)전면형 광고를 닫을 시에 실행할 리스너
+        mAdInterstitial.setOnAdClosedListener (new AdView.OnAdClosedListener() {
+            @Override
+            public void OnAdClosed() {
+                Log.i("InterstitialTab", "광고를 닫았습니다. ");
+            }
+        });
+        // 6. 전면형 광고를 불러온다.
+        mAdInterstitial.loadAd();
+**/
         ViewPager viewPager = (ViewPager) findViewById(R.id.mViewpager);
         if (viewPager != null) {
             setupViewPager(viewPager);
@@ -38,6 +79,15 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.setSelectedTabIndicatorColor(Color.WHITE);
     }
+/**
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (mAdInterstitial != null) {
+            mAdInterstitial = null;
+        }
+    }
+**/
 
     private void setupViewPager(ViewPager viewPager) {
         Adapter mAdapter = new Adapter(getSupportFragmentManager());

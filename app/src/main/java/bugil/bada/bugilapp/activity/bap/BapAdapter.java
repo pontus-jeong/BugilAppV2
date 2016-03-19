@@ -123,7 +123,7 @@ public class BapAdapter extends BaseAdapter {
         String mDinner = mData.mDinner;
 
         if (BapTool.mStringCheck(mBreakfast))
-            mLunch = mData.mBreakfast = mContext.getResources().getString(R.string.no_data_breakfast);
+            mBreakfast = mData.mBreakfast = mContext.getResources().getString(R.string.no_data_breakfast);
         if (BapTool.mStringCheck(mLunch))
             mLunch = mData.mLunch = mContext.getResources().getString(R.string.no_data_lunch);
         if (BapTool.mStringCheck(mDinner))

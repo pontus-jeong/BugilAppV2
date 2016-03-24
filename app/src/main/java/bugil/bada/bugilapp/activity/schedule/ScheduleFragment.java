@@ -94,7 +94,7 @@ public class ScheduleFragment extends Fragment {
             case 4:
                 mAdapter.addItem("학부모 아카데미", "2016.04.02 (토)" ,true);
                 mAdapter.addItem("전국연합학력평가(3)", "2016.04.06 (수)");
-                mAdapter.addItem("국회의원선거일", "2016.04.16 (토)" ,true);
+                mAdapter.addItem("국회의원선거일", "2016.04.13 (수)" ,true);
                 mAdapter.addItem("듣기평가(1)", "2016.04.19 (화)");
                 mAdapter.addItem("듣기평가(2)", "2016.04.20 (수)");
                 mAdapter.addItem("듣기평가(3)", "2016.04.21 (목)");

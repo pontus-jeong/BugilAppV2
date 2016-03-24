@@ -8,8 +8,8 @@ android {
         applicationId "bugil.bada.bugilapp"
         minSdkVersion 16
         targetSdkVersion 23
-        versionCode 39
-        versionName "3.2.9"
+        versionCode 40
+        versionName "3.3.0"
     }
     buildTypes {
         release {
@@ -34,6 +34,5 @@ dependencies {
     compile 'com.android.support:support-v4:23.1.1'
     compile files('libs/jericho-html-3.3.jar')
     compile 'com.nineoldandroids:library:2.4.0'
-    compile files('libs/AdfitPublisherSDK-2.3.7.jar')
     compile 'com.google.android.gms:play-services-ads:+'
 }

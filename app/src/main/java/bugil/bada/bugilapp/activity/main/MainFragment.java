@@ -82,35 +82,8 @@ public class MainFragment extends Fragment {
                             startActivity(new Intent(getActivity(), BapActivity.class));
                             break;
                         case 2:
-                            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getContext());
 
-                            // 제목셋팅
-                            alertDialogBuilder.setTitle("2016학년도 1학기 시간표 데이터가 없습니다.");
-
-                            // AlertDialog 셋팅
-                            alertDialogBuilder
-                                    .setMessage("현재 북일고 시간표 데이터가 업데이드되지 않은 상태입니다.\n여러분의 반 시간표를 추가해주시면 원할한 시간표 기능을 사용하실 수 있습니다. 시간표 데이터를 추가하시겠습니까?\n\n(※사용자 반의 시간표가 등록이 되어 있지 않으면 원할한 시간표 사용이 불가능합니다.)")
-                                    .setCancelable(false)
-                                    .setPositiveButton("네\n(수정 화면으로 이동)",
-                                            new DialogInterface.OnClickListener() {
-                                                public void onClick(
-                                                        DialogInterface dialog, int id) {
-                                                    callBrowser("https://docs.google.com/spreadsheets/d/1yNT2LlLQgdT_2zFwbyi-iw9F6G7CEjeCC7mtJKOEIzo/edit?usp=sharing");
-                                                }
-                                            })
-                                    .setNegativeButton("아니요\n(시간표 화면으로 이동)",
-                                            new DialogInterface.OnClickListener() {
-                                                public void onClick(
-                                                        DialogInterface dialog, int id) {
-                                                    startActivity(new Intent(getActivity(), TimeTableActivity.class));
-                                                }
-                                            });
-
-                            // 다이얼로그 생성
-                            AlertDialog alertDialog = alertDialogBuilder.create();
-
-                            // 다이얼로그 보여주기
-                            alertDialog.show();
+                           startActivity(new Intent(getActivity(), TimeTableActivity.class));
                             break;
 
                         case 3:

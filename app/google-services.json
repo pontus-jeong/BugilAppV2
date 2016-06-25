@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "842514268621",
+    "firebase_url": "https://project-4381724242364978218.firebaseio.com",
+    "project_id": "project-4381724242364978218",
+    "storage_bucket": "project-4381724242364978218.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842514268621:android:6b9e01d117b41316",
+        "android_client_info": {
+          "package_name": "bugil.bada.bugilapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842514268621-ldaatannejqqjvdlqs1ga2tnf4t91jpc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bugil.bada.bugilapp",
+            "certificate_hash": "5B3358377807B6CDF1C9D182591D6CD2EF8FE17F"
+          }
+        },
+        {
+          "client_id": "842514268621-a5sjsead7i9e6ag1amadspvq01snfmg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWOTZN8NkzUj2kHCCqlHiGSJr3CrkvTtI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842514268621-a5sjsead7i9e6ag1amadspvq01snfmg4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -15,6 +15,9 @@ import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class StopWatch extends AppCompatActivity {
     TextView mEllapse;
     TextView mEllapse_rest;
@@ -31,6 +34,8 @@ public class StopWatch extends AppCompatActivity {
     int mSplitCount;
     int mStatus = 0;
 
+    private AdView mAdView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +43,10 @@ public class StopWatch extends AppCompatActivity {
         setContentView(R.layout.activity_stop_watch);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         mEllapse = (TextView)findViewById(R.id.ellapse);
         mEllapse_rest = (TextView)findViewById(R.id.sellapse);
@@ -56,10 +65,38 @@ public class StopWatch extends AppCompatActivity {
             }
             });**/
         }
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in.
+        // TODO: Add code to check if user is signed in.
+    }
+
+    @Override
+    public void onPause() {
+        if (mAdView != null) {
+            mAdView.pause();
+        }
+        super.onPause();
+    }
+
+    /** Called when returning to the activity */
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (mAdView != null) {
+            mAdView.resume();
+        }
+    }
+
     public void onDestroy(){
         mTimerStudy.sendEmptyMessage(0);
         mTimerRest.sendEmptyMessage(0);
+        if (mAdView != null) {
+            mAdView.destroy();
+        }
         super.onDestroy();
+
     }
 
     public void mOnClick(View v) {

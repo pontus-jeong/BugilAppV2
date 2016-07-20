@@ -19,5 +19,11 @@
     <color name="colorPurple">#9C27B0</color>
     <color name="colorBugil">#f57f17</color>
     <color name="colorBack">#EEEEEE</color>
+    <color name="colorTitle">#ffffff</color>
+
+    <color name="login">#2196F3</color>
+    <color name="google">#00BCD4</color>
+    <color name="email">#03A9F4</color>
+    <color name="anonymous">#4CAF50</color>
 
 </resources>

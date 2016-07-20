@@ -196,4 +196,19 @@
     <string name="no_exam_db_message">시험 시간표 DB가 없습니다, 다운로드 하시겠습니까?</string>
     <string name="title_activity_school_notice">SchoolNotice</string>
 
+    <!-- 구글 AD -->
+    <string name="banner_ad_unit_id">ca-app-pub-1202990103689473/6141816543</string>
+
+    <string name="welcome_msg">안녕하세요?</string>
+    <string name="sign_out">로그 아웃</string>
+    <string name="contacts_permission_rationale">Access to account information is required to sign in.</string>
+    <string name="invite_menu_label">초대하기</string>
+    <string name="invitation_message">Please joine me for a friendly chat</string>
+    <string name="invitation_cta">Call to action</string>
+    <string name="invitation_title">Friendly Chat Invite</string>
+    <string name="sign_in">로그인</string>
+    <string name="sign_up">계정등록</string>
+    <string name="fresh_config">설정 적용</string>
+    <string name="cause_crash">Cause Crash</string>
+
 </resources>

@@ -29,6 +29,7 @@ import bugil.bada.bugilapp.activity.exam.ExamTimeActivity;
 import bugil.bada.bugilapp.activity.notice.NoticeActivity;
 import bugil.bada.bugilapp.activity.schedule.ScheduleActivity;
 import bugil.bada.bugilapp.activity.timetable.TimeTableActivity;
+import bugil.bada.bugilapp.talk;
 import bugil.bada.bugilapp.tool.BapTool;
 import bugil.bada.bugilapp.tool.Preference;
 import bugil.bada.bugilapp.tool.RecyclerItemClickListener;
@@ -98,6 +99,9 @@ public class MainFragment extends Fragment {
                         case 1:
                             startActivity(new Intent(getActivity(), SchoolNotice.class));
                             break;
+                        case 2:
+                            startActivity(new Intent(getActivity(), talk.class));
+                            break;
                         //break;
                         //case 2:
                         //startActivity(new Intent(getActivity(), ExamTimeActivity.class));
@@ -160,6 +164,9 @@ public class MainFragment extends Fragment {
             mAdapter.addItem(R.drawable.bico1,
                     getString(R.string.title_activity_notice1),
                     getString(R.string.message_activity_notice1));
+            mAdapter.addItem(R.drawable.bico1,
+                    "테스트",
+                    "테스트");
 
 
             /**mAdapter.addItem(R.drawable.bugil,
